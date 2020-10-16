@@ -41,8 +41,8 @@ public class MessageServiceImpl implements MessageService {
 		message.setLastModifiedDate(dto.getLast_modified_date());
 		message.setTitle(dto.getTitle());
 		message.setContent(dto.getMessage_content());
-		//Message m = messages.getOne(dto.getMessage_lead());
-		message.setLead(dto.getMessage_lead());
+		Message m = messages.getOne(dto.getMessage_lead());
+		message.setLead(m);
 		messages.save(message);
 
 	}

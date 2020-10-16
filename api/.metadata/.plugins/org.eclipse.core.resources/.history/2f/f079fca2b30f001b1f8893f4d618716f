@@ -61,14 +61,6 @@ public class MessageDto {
 		this.message_content = message_content;
 	}
 
-	public Long getMessage_lead() {
-		return message_lead;
-	}
-
-	public void setMessage_lead(Long message_lead) {
-		this.message_lead = message_lead;
-	}
-
 
 
 }

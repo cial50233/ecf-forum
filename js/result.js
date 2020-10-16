@@ -49,6 +49,9 @@ createMessage = (message) => {
         );
         listItem.appendChild(
             document.createElement('p')
+        ).textContent = 'Refer to the message id : ' + message.lead;
+        listItem.appendChild(
+            document.createElement('p')
         ).textContent = message.content;
 
         var x = document.createElement('button');

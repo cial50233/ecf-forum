@@ -16,13 +16,15 @@ messageSubForm.addEventListener('submit',
         const title = document.getElementById('title').value;
         const theme = document.getElementById('theme').value;
         const message_content = document.getElementById('message_content').value;
+        const message_lead = 1;
 
         const data = {
             last_modified_date: last_modified_date,
             author: author,
             title: title,
             theme: theme,
-            message_content: message_content
+            message_content: message_content,
+            message_lead: message_lead
         };
 
         var myHeaders = new Headers();
@@ -36,9 +38,6 @@ messageSubForm.addEventListener('submit',
             body: raw,
             redirect: 'follow'
         };
-
-        console.log(raw);
-        alert(raw);
         
         fetchCall(base_url, requestOptions);      
         window.location.href = 'http://127.0.0.1:5500/result.html';

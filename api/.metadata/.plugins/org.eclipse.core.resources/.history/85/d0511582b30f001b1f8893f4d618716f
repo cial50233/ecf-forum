@@ -36,7 +36,7 @@ public class Message {
     private String content;
 	
 	@Column(name = "message_lead")
-    private Long lead;
+    private Message lead;
 	
 	public Message() {
 		
@@ -89,16 +89,6 @@ public class Message {
 	public void setTheme(Theme theme) {
 		this.theme = theme;
 	}
-
-	public Long getLead() {
-		return lead;
-	}
-
-	public void setLead(Long lead) {
-		this.lead = lead;
-	}
-
-
 	
 	
 	

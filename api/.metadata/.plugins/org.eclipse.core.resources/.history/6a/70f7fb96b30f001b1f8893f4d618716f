@@ -14,8 +14,6 @@ public class MessageDto {
     private String title;
 	
     private String message_content;
-    
-    private Long message_lead;
 	
 	public MessageDto() {
 		
@@ -59,14 +57,6 @@ public class MessageDto {
 
 	public void setMessage_content(String message_content) {
 		this.message_content = message_content;
-	}
-
-	public Long getMessage_lead() {
-		return message_lead;
-	}
-
-	public void setMessage_lead(Long message_lead) {
-		this.message_lead = message_lead;
 	}
 
 
