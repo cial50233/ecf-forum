@@ -1,0 +1,25 @@
+package ecf.forum.api.controllers;
+
+import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import ecf.forum.api.dtos.MessageDto;
+import ecf.forum.api.services.MessageService;
+
+@RestController
+@RequestMapping("/messages")
+public class MessageController {
+
+	@Autowired
+	private MessageService service;
+
+	@PostMapping
+	protected void create(@Valid @RequestBody MessageDto dto) {
+		service.create(dto);
+	}
+
+}

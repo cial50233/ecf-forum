@@ -1,0 +1,25 @@
+package ecf.forum.api.services;
+
+import org.springframework.stereotype.Service;
+
+import ecf.forum.api.entities.Message;
+import ecf.forum.api.repositories.MessageRepository;
+
+@Service
+public class MessageServiceImpl implements MessageService {
+
+	private final MessageRepository messages;
+	
+	public MessageServiceImpl(MessageRepository messages) { 
+		
+		this.messages = messages;
+	}
+	
+	
+
+	@Override
+	public Message getOne(Long id) {
+		return messageRepo.findById(id).get();
+	}
+
+}

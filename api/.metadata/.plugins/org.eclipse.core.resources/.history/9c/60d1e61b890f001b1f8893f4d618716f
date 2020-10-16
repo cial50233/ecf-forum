@@ -1,0 +1,66 @@
+package ecf.forum.api.dtos;
+
+import java.time.LocalDateTime;
+
+import ecf.forum.api.entities.Author;
+import ecf.forum.api.entities.Theme;
+
+public class MessageDto {
+	
+	
+	
+    private Long author;
+	
+    private Theme theme;
+	
+    private LocalDateTime lastModifiedDate;
+	
+    private String title;
+	
+    private String content;
+	
+	public MessageDto() {
+		
+	}
+
+	public Long getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Long author) {
+		this.author = author;
+	}
+
+	public Theme getTheme() {
+		return theme;
+	}
+
+	public void setTheme(Theme theme) {
+		this.theme = theme;
+	}
+
+	public LocalDateTime getLastModifiedDate() {
+		return lastModifiedDate;
+	}
+
+	public void setLastModifiedDate(LocalDateTime lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+}

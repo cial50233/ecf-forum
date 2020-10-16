@@ -1,0 +1,24 @@
+package ecf.forum.api.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MessageServiceImpl implements MessageService{
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+    public Financing getOne(Long id) {
+	return financingRepo.findById(id).get();
+    }
+
+}

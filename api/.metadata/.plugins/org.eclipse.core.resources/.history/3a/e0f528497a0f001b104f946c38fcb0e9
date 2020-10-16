@@ -1,0 +1,13 @@
+package ecf.forum.api.dtos;
+
+public class MessageDto {
+	
+	
+	
+	
+	
+	public MessageDto() {
+		
+	}
+
+}

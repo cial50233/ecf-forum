@@ -1,0 +1,23 @@
+[
+    {
+        "last_modified_date": 1602693349981,
+        "author": "Åland Islands",
+        "theme": "news",
+        "title": "Title of first message",
+        "message_content": "Firts message"
+    },
+    {
+        "last_modified_date": 1602693445892,
+        "author": "Mantis78",
+        "theme": "news",
+        "title": "Title of second message",
+        "message_content": "second message"
+    },
+    {
+        "last_modified_date": 1602693566537,
+        "author": "thr",
+        "theme": "news",
+        "title": "Title of third message",
+        "message_content": "third message"
+    }
+]

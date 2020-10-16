@@ -1,0 +1,42 @@
+package ecf.forum.api.services;
+
+import org.springframework.stereotype.Service;
+
+import ecf.forum.api.dtos.MessageDto;
+import ecf.forum.api.entities.Message;
+import ecf.forum.api.repositories.MessageRepository;
+
+@Service
+public class MessageServiceImpl implements MessageService {
+
+	private final MessageRepository messages;
+
+	public MessageServiceImpl(MessageRepository messages) {
+
+		this.messages = messages;
+	}
+
+	@Override
+	public void create(MessageDto dto) {
+
+		Message message = new Message();
+		message.setAuthor(dto.getAuthor());
+		message.setLastModifiedDate(dto.getLastModifiedDate());
+		message.setTitle(dto.getTitle());
+		message.setContent(dto.getContent());
+		
+		messages.save(message)
+
+	}
+
+	@Override
+	public void delete(Long id) {
+		messages.deleteById(id);
+	}
+
+	@Override
+	public Message getOne(Long id) {
+		return messages.findById(id).get();
+	}
+
+}

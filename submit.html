@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forum</title>
+</head>
+
+<body>
+    <div id="container">
+        <h2>Submit a message</h2>
+        <form id="messageSubForm">
+            <input type="hidden" name="author" value="" id="author">
+            <input type="hidden" name="last_modified_date" value="" id="last_modified_date">
+            <label for="title">Title: </label><input value="" id="title" type="text" name="title">
+            <br>
+            <br>
+            <label for="theme">Theme: </label>
+            <select name="theme" id="theme">
+                <option value="1">News</option>
+                <option value="fun">Fun</option>
+                <option value="movie">Movies</option>
+                <option value="recipe">Recipes</option>
+              </select>
+            <br>
+            <br>
+            <label for="message_content">Message:</label>
+            <br>
+            <textarea id="message_content" name="message_content" rows="10" cols="50"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <button id="btn">Go to result page</button>
+    </div>
+    <script src="js/fetchCall.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
