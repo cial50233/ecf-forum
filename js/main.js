@@ -1,6 +1,4 @@
 
-
-
 const messageSubForm = document.getElementById('messageSubForm');
 
 const base_url = 'http://localhost:8081/messages';
@@ -8,10 +6,10 @@ const base_url = 'http://localhost:8081/messages';
 
 messageSubForm.addEventListener('submit',
     function (e) {
-        //e.preventDefault();
+        e.preventDefault();
         var d = new Date(Date.now());
         
-        const last_modified_date = d.toISOString(); //"2021-02-05T22:08:28.097832";
+        const last_modified_date = d.toISOString();
         const author = 1;
         const title = document.getElementById('title').value;
         const theme = document.getElementById('theme').value;
@@ -44,10 +42,6 @@ messageSubForm.addEventListener('submit',
     },
     false
 );
-
-function showData(datas) {
-    window.location.href = 'http://127.0.0.1:5500/result.html';
-}
 
 const btn = document.getElementById("btn");
 

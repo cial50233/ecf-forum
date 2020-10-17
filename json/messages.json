@@ -1,10 +1,10 @@
 [
     {
-        "last_modified_date": 1602693349981,
-        "author": "Åland Islands",
-        "theme": "news",
+        "last_modified_date": "2020-10-16T10:35:09.962Z",
+        "author": 1,
+        "theme": 1,
         "title": "Title of first message",
-        "message_content": "Firts message"
+        "message_content": "Firt message"
     },
     {
         "last_modified_date": 1602693445892,
