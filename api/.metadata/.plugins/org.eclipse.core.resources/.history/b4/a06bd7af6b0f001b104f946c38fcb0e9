@@ -1,5 +1,0 @@
-package ecf.forum.api.repositories;
-
-public interface MessageRepository {
-
-}

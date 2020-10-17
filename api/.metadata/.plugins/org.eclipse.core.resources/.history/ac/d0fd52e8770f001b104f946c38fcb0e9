@@ -1,6 +1,0 @@
-package ecf.forum.api.services;
-
-@Service
-public class MessageServiceImpl implements MessageService{
-
-}
